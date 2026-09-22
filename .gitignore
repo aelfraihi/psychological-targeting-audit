@@ -35,3 +35,6 @@ campaigns.csv
 personality.csv
 cache/
 output/
+
+.env.example
+.env
