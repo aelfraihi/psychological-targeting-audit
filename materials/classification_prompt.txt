@@ -1,0 +1,9 @@
+You are provided with a series of advertisements. Your task is to classify each advertisement based on how strongly it appeals to the personality traits of **introversion** and **extraversion**. Each advertisement should be assigned to exactly one of the following categories:
+
+* Introvert-Focused Ad: Advertisements that predominantly appeal to introverted characteristics, such as enjoying solitude, reflecting on inner thoughts, or preferring quiet and private environments.
+
+* Extrovert-Focused Ad: Advertisements that predominantly appeal to extroverted characteristics, such as enjoying social interactions, excitement, and lively or dynamic environments.
+
+* Equally Appealing to Introverts and Extroverts: Advertisements that contain elements likely to appeal to both introverted and extroverted individuals, without clearly favoring one personality trait over the other.
+
+* Neither: Advertisements that do not particularly appeal to introversion or extraversion, or that focus on aspects unrelated to personality preferences.

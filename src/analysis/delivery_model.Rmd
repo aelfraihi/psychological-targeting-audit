@@ -1,0 +1,102 @@
+---
+title: "Ad delivery responsiveness to personality alignment"
+output: html_notebook
+---
+
+Dependencies: `dplyr`, `sandwich`, `lmtest`, `marginaleffects`, `ggplot2`.
+
+```{r}
+library(dplyr)
+
+combined_df <- read.csv("../data/reach_results.csv")
+
+combined_df <- combined_df %>%
+  mutate(Alignment = ifelse(mapply(grepl, Audience, AdType), "aligned", "misaligned"))
+```
+
+
+```{r}
+outliers <- with(
+  combined_df,
+  (Trial == 4 & ProfilingMethod == "Psychometric" &
+     Audience == "Extrovert" & AdID == "Introvert-ad-1") |
+  (Trial == 4 & ProfilingMethod == "Behavioral" &
+     Audience == "Introvert" & AdID == "Extrovert-ad-2")
+)
+
+model_df <- combined_df[!outliers, ]
+nrow(model_df)
+```
+
+
+```{r}
+library(sandwich)
+library(lmtest)
+
+model_df$Audience <- as.factor(model_df$Audience)
+model_df$Alignment <- as.factor(model_df$Alignment)
+model_df$Trial <- as.factor(model_df$Trial)
+model_df$AdID <- as.factor(model_df$AdID)
+model_df$ProfilingMethod <- as.factor(model_df$ProfilingMethod)
+
+model <- glm(
+  cbind(Reach, Fail) ~ Audience * Alignment * ProfilingMethod + AdID,
+  data = model_df,
+  family = quasibinomial
+)
+
+vcov_trial <- vcovCL(model, cluster = model_df$Trial)
+
+coeftest(model, vcov. = vcov_trial)
+```
+
+## Simple effects
+
+Change in predicted reach proportion when framing switches from aligned
+to misaligned, within each audience and profiling method, on the
+probability scale.
+
+```{r}
+library(marginaleffects)
+
+alignment_effects <- comparisons(
+  model,
+  variables = list(Alignment = "reference"),
+  by = c("Audience", "ProfilingMethod"),
+  vcov = vcov_trial
+)
+
+alignment_effects
+```
+
+## Predicted reach
+
+```{r}
+library(ggplot2)
+
+preds <- predictions(
+  model,
+  by = c("Alignment", "Audience", "ProfilingMethod"),
+  vcov = vcov_trial
+)
+
+ggplot(as.data.frame(preds),
+       aes(x = Audience, y = estimate, color = Alignment)) +
+  geom_point(position = position_dodge(0.5), size = 4) +
+  geom_errorbar(aes(ymin = conf.low, ymax = conf.high),
+                position = position_dodge(0.5), width = 0.15, linewidth = 1) +
+  facet_wrap(~ProfilingMethod) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_color_manual(values = c(aligned = "#1071e5", misaligned = "#e76f51")) +
+  labs(x = "Audience personality", y = "Predicted reach", color = "Condition") +
+  theme_minimal() +
+  theme(legend.position = "top",
+        strip.text = element_text(size = 12, face = "bold"))
+```
+
+## Diagnostics
+
+```{r}
+summary(model)$dispersion
+plot(model, which = c(1, 2))
+```

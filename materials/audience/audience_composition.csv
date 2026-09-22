@@ -1,0 +1,4 @@
+group,n,prop_female,prop_male,age_mean,age_sd,age_min,fb_daily,fb_weekly,fb_monthly
+Extravert,1302,0.592,0.408,42.6,14.0,18,1080,189,33
+Introvert,2322,0.581,0.419,40.0,12.5,18,1793,422,107
+Moderate,1709,0.576,0.424,39.9,12.9,18,1323,305,81

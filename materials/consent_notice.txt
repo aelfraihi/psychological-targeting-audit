@@ -1,0 +1,88 @@
+CONSENT NOTICE
+
+We provide the consent notice shown to users on Prolific.
+
+
+SUMMARY
+
+If you choose to participate in this study, you agree to the following privacy terms.
+
+We will collect the responses you provide in the survey, as well as limited technical information, including your IP address, Prolific ID, and browser-related data (such as browser type, operating system, and whether ad-blocking software is enabled). This information is collected solely for research purposes related to this study and will be deleted after the study is completed.
+
+If you consent to participate, you may later be shown an informational advertisement on one or more Meta platforms (including Facebook, Instagram, or Messenger) as part of the study.
+
+You have the right to request access to, or deletion of the data collected about you by contacting the research team through Prolific or via [the email address provided].
+
+Should you disagree with this notice, kindly exit the survey and return your submission on prolific.
+
+
+DATA COLLECTION
+
+We collect the following data with participant's consent, on form submission:
+
+- Internet Protocol address (IP address)
+- Device data. We collect device data such as information about your computer, phone, tablet, or other device you use to access the study form. Depending on the device used, this device data may include information such as browser type, hardware model, operating system, and system configuration information.
+- Location data. We collect location data such as information about your device's location, which can be either precise or imprecise. For this purpose, we use technologies to collect geolocation data that tells us your approximate location based on your IP address.
+
+
+DATA PROCESSING
+
+We process your information with your consent to deliver targeted advertising on your social media accounts: Facebook or Instagram, during the duration of our experiment. If you choose to participate, you will be signed up to a single ad campaign and may receive a generic ad one or more times if you have been successfully retargeted. This requires us to share your information with Meta's advertising platform. Meta uses this information to create Custom audiences and target them with an ad campaign. The data we collect is also used to establish some statistics (e.g., virtual private networks VPN or proxy use, ad block use, etc.)
+
+
+DATA RECORDS
+
+We protect your personal information through a system of technical security measures:
+
+- We make use of our institution's organizational and technical processes and procedures to safely store and protect your personal information. Your data is stored safely on [Institute Name]'s infrastructure (one of our research institution) with restricted access: only our research team will have access to view, delete and modify your data.
+- The data we store is hashed with a one way salted hash function and no copy of the data will be stored elsewhere.
+- During the time we administer our experiment, we make sure to keep the website regularly maintained and secured.
+
+
+DATA RETENTION PERIOD
+
+We will keep your personal information in our database only for the duration of our study. When our research study is done and our research is published, we will delete your data records.
+
+
+PERSONAL RIGHTS
+
+Rights to request deletion of the data
+
+Pursuant to the statutory and regulatory provisions applicable, you have the following rights:
+
+- To exercise your right of access, to find out what personal data concerning you is held;
+- To ask for your data to be updated, if they are incorrect;
+- To request the portability or erasure of your data;
+- To ask for the processing of your data to be limited;
+- To oppose the processing of your data;
+
+To exercise these rights, you can [contact us]. If you have a complaint about how we handle your data, we would like to hear from you.
+
+
+DATA PROTECTION OFFICER
+
+The Data Protection Officer of our research institution, [Institute], can be contacted for any questions regarding the protection of personal data. The contact details are as follows: [Institute] [Address and contact].
+
+
+COOKIES AND SIMILAR TRACKING TECHNOLOGIES
+
+What are cookies
+
+Cookies are small pieces of text sent to your browser by a website you visit. They help that website remember information about your visit, which can both make it easier to visit the site again and make the site more useful to you.
+
+Third-party cookies
+
+With participant's consent, we use Meta's third-party cookies for retargeting purposes, specifically if the participant has a Facebook account (this includes Instagram and Messenger too).
+
+Delete browser cookies
+
+You can delete all cookies already stored on your device by clearing the browsing history of your browser. This will remove all cookies from the sites you have visited. To have more fine-grained control over cookies specific to different sites, refer to your browser's settings for privacy protection and cookies.
+
+Block all cookies
+
+Most modern browsers can be configured to prevent the storage of cookies on your device, but doing so may require you to indicate some of your preferences each time you visit a website/page. Additionally, certain services and features may not be available (such as logging in using a profile, for example).
+
+
+FACEBOOK RECRUITMENT: DISCLOSURE
+
+The bio for the public Facebook pages we created included the following disclaimer: We use Meta's advertising platform to reach users who have engaged with this page.
